@@ -1,0 +1,147 @@
+.projects_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.projects_title {
+    position: absolute;
+    top: 120px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    color: #b6b6b6;
+}
+
+.projects_nav_container {
+    position: absolute;
+    top: 152px;
+    display: flex;
+    flex-direction: row;
+    z-index: 30;
+    color: white;
+}
+
+.projects_btn {
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.projects_div1 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    z-index: 20;
+    scrollbar-width: 3px;
+}
+
+.projects_div1::-webkit-scrollbar {
+    height: 4px;
+}
+
+.projects_div1::-webkit-scrollbar-track {
+    background-color: #f3f3f3;
+}
+
+.projects_div1::-webkit-scrollbar-thumb {
+    background-color: #ca3e47;
+    border-radius: 16px;
+}
+
+.projects_div2 {
+    width: 100vw;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    height: 100vh
+}
+
+.project_image {
+    display: block;
+
+    margin-top: 7rem;
+}
+
+.projects_div3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 75rem;
+}
+
+.projects_div3_h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+}
+.project_github_link{
+    transition: all 0.2s;
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+    border-radius: 0.375rem; 
+    width: 150px;
+}
+.project_github_link:hover{
+    background-color: #ca3e47;
+}
+.github_span{
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    color: #ffffff;
+}
+.projectLeft {
+    color: #ca3e47;
+    height: 1.75rem;
+    width: 1.75rem;
+    animation: pulse 2s infinite;
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+}
+.projectRight{
+    color: #ca3e47; 
+    height: 1.75rem; 
+    width: 1.75rem; 
+    animation: pulse 2s infinite; 
+    position: absolute;
+    top: 50%; 
+    right: 25px; 
+    transform: translateY(-50%);
+}
+
+@keyframes pulse {
+
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+   
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+}
+

@@ -9,8 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.2.5",
+    "antd": "^5.8.4",
+    "framer-motion": "^10.16.1",
     "next": "13.4.19",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-scroll-snap": "^1.0.0",
+    "react-simple-typewriter": "^5.0.1"
   }
 }
