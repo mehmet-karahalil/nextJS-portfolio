@@ -4,8 +4,6 @@ import style from "./style.module.css";
 import { projectsData } from "../../data/projectsData";
 import { GithubOutlined, LeftOutlined, RightOutlined, ShareAltOutlined } from "@ant-design/icons";
 import Image from "next/image";
-import card from "../../../public/cardproject.jpg"
-
 
 export default function Projects() {
   const [showProjects, setShowProjects] = useState(projectsData);
@@ -21,6 +19,10 @@ export default function Projects() {
       setShowProjects(
         projectsData.filter((project) => project.language == "Next.JS")
       );
+    }else if (lang == "HTML") {
+      setShowProjects(
+        projectsData.filter((project) => project.language == "HTML")
+      );
     }
   }, [lang]);
 
@@ -33,21 +35,21 @@ export default function Projects() {
         </button>
         <button
           className={style.projects_btn}
-          onClick={() => setLang("React.JS")}
+          onClick={() => setLang("HTML")}
         >
           HTML-CSS-JS
+        </button>
+        <button
+          className={style.projects_btn}
+          onClick={() => setLang("React.JS")}
+        >
+          React.JS
         </button>
         <button
           className={style.projects_btn}
           onClick={() => setLang("Next.JS")}
         >
 
-          Next.JS
-        </button>
-        <button
-          className={style.projects_btn}
-          onClick={() => setLang("Next.JS")}
-        >
           Next.JS
         </button>
       </div>
